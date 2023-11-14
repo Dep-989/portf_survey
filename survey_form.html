@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name..." required /> </label>
+          <label id="email-label">Email <input id="email" type="email" placeholder="Enter your email..." required /> </label>
+          <label id="number-label">Age <input id="number" type="number" min="12" max="99" placeholder="Age" required /> </label>
+          </fieldset>
+          <fieldset>
+            <label> Seleziona un opzione: <select id="dropdown">
+              <option>Other1</option>
+              <option>Other2</option>
+            </select>
+              </label>
+          </fieldset>
+          <fieldset>
+            <legend>Account type (required)</legend>
+        <label><input id="personal-account" type="radio" name="account-type" value="1" checked /> Personal</label>
+        <label><input id="business-account" type="radio" name="account-type" value="2" /> Business</label>
+            </fieldset>
+            <fieldset>
+              <legend>Poi vediamo</legend>
+              <label><input id="other1" type="radio" name="other1" value="1" checked /> Other1</label>
+              <label><input id="other2" type="radio" name="other2" value="2" /> Other2</label>
+            <label>Provide a bio:
+          <textarea id="bio" name="bio" placeholder="I like coding on the beach..."></textarea>
+        </label>
+              </fieldset>
+               <input id="submit" type="submit" value="Submit" />
+        </form>
+      </body>
+      </html>
